@@ -2,10 +2,9 @@
 A logging library in javascript with various debug levels. 
 
 | HANDLES  | COLORS  | 
-| :------: |:-------:|
 | :------: |:-------:| 
-| SUCCESS  | GREEN   |
-| INFO     | WHITE   |
-| RESPONSE | CYAN    |
-| WARNING  | YELLOW  |
-| CRITICAL | RED     |
+| success  | green   |
+| info     | white   |
+| response | cyan    |
+| warning  | yellow  |
+| critical | red     |
