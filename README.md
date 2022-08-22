@@ -3,7 +3,7 @@ A logging library in javascript with various debug levels.
 
 import using
 ```js
-const Logger = require('PATH/TO/DOORS/JS');
+const Logger = require('doors-logger');
 const ll = new Logger();
 ```
 
