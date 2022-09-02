@@ -18,9 +18,8 @@ log.CRITICAL(...);
 
 ```
 
-
-Each function has 2 parameters: label and content
-label is the title of message and content is the body of message
+Each function has 2 parameters: label and content.
+**label** is the title of message and **content** is the body of message
 
 ```js
 log.SUCCESS(label, message)
