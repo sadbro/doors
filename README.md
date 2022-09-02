@@ -18,6 +18,7 @@ log.CRITICAL(...);
 
 ```
 
+
 Each function has 2 parameters: label and content.
 **label** is the title of message and **content** is the body of message
 
@@ -27,7 +28,8 @@ log.SUCCESS(label, message)
 
 The above will produce the following result:
 
->[FILEPATH_FROM_WHICH_LOGGER_IS_CALLED][label][message]
+> $ [FILEPATH_FROM_WHICH_LOGGER_IS_CALLED][label][message]
+
 
 | HANDLES  | COLORS  | 
 | :------: |:-------:| 
@@ -36,3 +38,11 @@ The above will produce the following result:
 | response | cyan    |
 | warning  | yellow  |
 | critical | red     |
+
+
+### Getting the logs in a file
+
+```js
+
+log.down(FILEPATH)
+```
