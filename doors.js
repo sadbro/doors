@@ -58,6 +58,11 @@ class HANDLE {
 
         this.address = process.mainModule.filename;
     }
+
+    toString(){
+
+        return `{label: "${this.label}", level: "${this.level.toString()}", information: "${this.information}", rawTime: "${this.rawTime.getTime()}", address: "${this.address}}"`
+    }
 }
 
 class Logger {
@@ -66,6 +71,15 @@ class Logger {
 
         this.instanceAddress = set
         this.handles = [];
+    }
+
+    down(filepath){
+
+        var fs = require('fs');
+        fs.appendFileSync(filepath, this.handles.join("\n") + "\n", (err) => {
+
+            console.log(err);
+        });
     }
 
     SUCCESS(label, message){
