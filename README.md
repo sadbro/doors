@@ -1,11 +1,34 @@
-# doors
-A logging library in javascript with various debug levels. 
+# doors-logger
+
+A logging library in javascript with various debug levels.
 
 import using
+
 ```js
 const Logger = require('doors-logger');
-const ll = new Logger();
+const log = new Logger();
+
+// the functions are:
+
+log.SUCCESS(...);
+log.INFO(...);
+log.RESPONSE(...);
+log.WARNING(...);
+log.CRITICAL(...);
+
 ```
+
+
+Each function has 2 parameters: label and content
+label is the title of message and content is the body of message
+
+```js
+log.SUCCESS(label, message)
+```
+
+The above will produce the following result:
+
+>[FILEPATH_FROM_WHICH_LOGGER_IS_CALLED][label][message]
 
 | HANDLES  | COLORS  | 
 | :------: |:-------:| 
@@ -14,5 +37,3 @@ const ll = new Logger();
 | response | cyan    |
 | warning  | yellow  |
 | critical | red     |
-
-Labels are custom header you want to add to the stream, for example you can use custom error to log what type of error it is or any additional debug info.
